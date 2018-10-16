@@ -39,7 +39,7 @@ Schema Enhancements
 
 Evaluation
 -----
-* [Brief, anonymous evaluation]
+* [Course Evaluation]
 
 GraphQL Links
 ----
@@ -68,4 +68,4 @@ GraphQL Links
 * [React Apollo](https://github.com/apollographql/react-apollo)
 * [Prisma](https://www.prisma.io)
 
-Questions? Send Eve an email: eve@moonhighway.com.
+Questions? Send Eve an email: eve@moonhighway.com
