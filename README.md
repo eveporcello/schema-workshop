@@ -11,7 +11,9 @@ GraphQL Overview & Query Language
 
 GraphQL Schema Definition Language
 ----
+* [Schema Cheat Sheet](https://github.com/sogko/graphql-schema-language-cheat-sheet)
 * [Through Types](https://codesandbox.io/s/5vzn2rkzxn)
+* [Nullable vs Non-nullable - Start](https://codesandbox.io/s/p3mzqzl9nq)
 
 ### Sample Schemas
 * [Commenting a Schema](https://github.com/eveporcello/schema-workshop/blob/master/02-schema-definition-language/sample-schemas/snowtooth-schema-comments.graphql)

@@ -2,7 +2,7 @@ Extras
 ====
 Additional GraphQL topics and resources
 
-* [Security](https://github.com/MoonHighway/learning-graphql/blob/master/chapter-07/photo-share-api/index.js)
+* [Apollo Server Security](https://github.com/MoonHighway/learning-graphql/blob/master/chapter-07/photo-share-api/index.js)
 * [Apollo Engine](http://engine.apollographql.com)
 * [Cost Analysis](https://github.com/pa-bru/graphql-cost-analysis)
 
