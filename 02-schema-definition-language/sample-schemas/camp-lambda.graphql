@@ -104,10 +104,10 @@ type Query {
 }
 
 input NewCamper {
-    name
-    age
-    email
-    password
+    name: String
+    age: Int
+    email: String
+    password: String
 }
 
 type AuthPayload {

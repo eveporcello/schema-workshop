@@ -6,12 +6,12 @@ const { ApolloServer } = require("apollo-server")
 const typeDefs = ``
 
 const agendaItems = [
-    { name: "Comp Sci", subject: "Computer Science", students: 12 },
-    { name: "Cardio", reps: 100 },
+    { name: "Java", subject: "Computer Science", students: 12 },
+    { name: "Mountain Climbers", reps: 100 },
     { name: "Poets", subject: "English 101", students: 3 },
-    { name: "Math Whiz", subject: "Mathematics", students: 12 },
-    { name: "Upper Body", reps: 10 },
-    { name: "Lower Body", reps: 20 }
+    { name: "Calculus", subject: "Mathematics", students: 12 },
+    { name: "Jump Squats", reps: 50 },
+    { name: "Skaters", reps: 15 }
 ]
 
 const resolvers = {}
