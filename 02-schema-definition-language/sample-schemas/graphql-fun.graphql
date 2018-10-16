@@ -1,0 +1,75 @@
+type Player {
+    login: ID!
+    avatar: String
+    name: String
+    team: Team
+    instrument: Instrument
+    playingGame: Boolean!
+    endEvent: Boolean!
+}
+
+type Color {
+    name: String!
+    hex: String!
+    rgb: String!
+    text: String!
+    negate: String!
+}
+
+type Team {
+    color: Color!
+    players: [Player!]!
+}
+
+type Game {
+    playerCount: Int
+    players: [Player!]!
+    playingMusic: [Player!]!
+    faces: [Player!]!
+}
+
+enum Instrument {
+    BASS
+    DRUMS
+    PERCUSSION
+    SAMPLER
+    SYNTH
+}
+
+type AuthorizationPayload {
+    token: ID!
+    player: Player!
+}
+
+type Query {
+    me: Player
+    currentGame: Game
+    allPlayers(onDeck: Boolean first: Int): [Player!]!
+    playerCount(onDeck: Boolean): Int!
+    allTeams: [Team!]!
+    Team(colorName: String!): Team
+}
+
+type PickPayload {
+    count: Int!
+    player: Player!
+}
+
+type Mutation {
+    githubAuthorization(code: String!): AuthorizationPayload!
+    logout: Boolean
+    createTeams(count: Int): [Team!]!
+    destroyTeams: Boolean
+    startGame: Game
+    endGame: Boolean
+    pickPlayer: PickPayload!
+    putBackPlayer(login: ID): PickPayload!
+    play: Boolean!
+    pause: Boolean!
+    end: Boolean!
+}
+
+type Subscription {
+    instructions: Player!
+    gameChange: Game!
+}

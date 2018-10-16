@@ -4,13 +4,12 @@ In this one-day workshop, we'll take a closer look at GraphQL's schema definitio
 
 GraphQL Overview & Query Language
 ------
-* [Slides]
+* [Slides](https://slides.com/moonhighway/schema-workshop)
 * [Snowtooth API](http://snowtooth.herokuapp.com)
 
 GraphQL Schema Definition Language
 ----
-* [Slides]()
-* [Through Types]()
+* [Through Types](https://codesandbox.io/s/5vzn2rkzxn)
 
 ### Schema Examples
 * [Commenting a Schema]
@@ -24,11 +23,12 @@ Schema Activity
 
 Schema Enhancements
 ----
-* [Union Types]()
-* []
-* [Interfaces]
-* [MutationResponse Interfaces]()
-* [Deprecated Directive]()
-* [UpperCase Directive]()
-* [Custom Scalars - Pets]
-* [Custom Scalars - Crypto]
+* [Union Types](https://codesandbox.io/s/rm2rx3opqm)
+* [Unions Lab]()
+* [Interfaces](https://codesandbox.io/s/71x8n304r1)
+* [Interfaces Lab]()
+* [MutationResponse Interfaces](https://glitch.com/edit/#!/graphql-interfaces)
+* [Deprecated Directive](https://codesandbox.io/s/kwxm244wno)
+* [UpperCase Directive](https://codesandbox.io/s/l78ojm8nw9)
+* [Custom Scalars - Pets](https://codesandbox.io/s/pw32jkj04j)
+* [Custom Scalars - Crypto](https://codesandbox.io/s/53o3pmy43n)

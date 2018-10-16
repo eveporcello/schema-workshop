@@ -1,0 +1,138 @@
+scalar DateTime
+
+enum Rank {
+    ONE
+    TWO
+    THREE
+}
+
+enum ActivityType {
+    SPORTS
+    CRAFTS
+    NATURE
+    GAMES
+}
+
+enum MealType {
+    BREAKFAST
+    LUNCH
+    DINNER
+}
+
+type Counselor {
+    email: ID!
+    name: String!
+    photo: Image!
+    bio: String!
+    years: Int!
+    rank: Rank
+    cabin: Cabin
+}
+
+type Camper {
+    badgeNumber: ID!
+    name: String!
+    age: Int!
+    cabin: Cabin!
+    agenda: [AgendaItem!]!
+}
+
+type Cabin {
+    animal: ID!
+    image: Image
+    maxCampers: Int!
+    totalCampers: Int!
+    counselor: Counselor!
+    campers: [Camper!]!
+}
+
+type Image {
+    fullSize: String!
+    thumb: String!
+}
+
+type Activity implements AgendaItem {
+    id: ID!
+    title: String!
+    start: DateTime!
+    end: DateTime!
+    type: ActivityType!
+    fullDay: Boolean = false!
+    maxCampers: Int!
+    image: Image
+    counslor: Counslor!
+    totalCampers(ages: [Int!]): Int!
+    campers(ages: [Int!]): [Camper!]!
+}
+
+type Meal implements AgendaItem {
+    type: MealType!
+    start: TimeStamp!
+    end: TimeStamp!
+}
+
+type Canteen implements AgendaItem {
+    allowedItems: Int!
+    menu: [String!]!
+    start: TimeStamp!
+    end: TimeStamp!
+}
+
+interface AgendaItem {
+    start: DateTime!
+    end: DateTime!
+}
+
+union Member = Camper | Counselor
+
+input PagingInput {
+    start: Int = 0!
+    count: Int = 100!
+}
+
+type Query {
+    me: Camper
+    totalMembers: Int!
+    everyone: [Member!]!
+    totalCounselors(rank: Rank): Int!
+    allCounselors(rank: Rank): [Counselor!]!
+    counselor(email: ID!): Counselor!
+    cabins: [Cabin!]!
+    cabin(animal: ID!): Cabin!
+    activities(paging: PagingInput type: ActivityType): [Activity!]!
+    activity(id: ID!): Activity!
+}
+
+input NewCamper {
+    name
+    age
+    email
+    password
+}
+
+type AuthPayload {
+    token: String!
+    camper: Camper!
+}
+
+type Mutation {
+    register(input: NewCamper!): Camper!
+    login(email: String! password: String!): AuthPayload!
+    addActivity(id: ID!): Boolean!
+    removeActivity(id: ID!): Boolean!
+}
+
+enum EnrolmentType {
+    REGISTERED
+    UNREGISTERED
+}
+
+type EnrollmentPayload {
+    type: EnrolmentType
+    camper: Camper!
+    activity: Activity!
+}
+
+type Subscription {
+    enrollment: EnrollmentPayload!
+}
