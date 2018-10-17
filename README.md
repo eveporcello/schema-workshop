@@ -37,11 +37,10 @@ Schema Enhancements
 * [UpperCase Directive](https://codesandbox.io/s/l78ojm8nw9)
 * [Custom Scalars - Pets](https://codesandbox.io/s/pw32jkj04j)
 * [Custom Scalars - Crypto](https://codesandbox.io/s/53o3pmy43n)
-* [Errors]()
 
 Evaluation
 -----
-* [Course Evaluation]
+* [Course Evaluation](https://docs.google.com/forms/d/e/1FAIpQLSdYOD68TAVsJsNqELJBo8dOV03fjdmC9N9-xXDSC1E1uFZMag/viewform?usp=sf_link)
 
 GraphQL Links
 ----

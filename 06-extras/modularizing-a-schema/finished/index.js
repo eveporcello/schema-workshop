@@ -1,18 +1,17 @@
-const { ApolloServer } = require('apollo-server')
+const { ApolloServer, gql } = require('apollo-server')
 
 const Author = require('./schema/Author')
 const Book = require('./schema/Book')
 
-const Query = `
+const Query = gql`
   type Query {
-    author(name: String): Author
-    book(name: String): Book
+    _empty: String
   }
 `
 
 const server = new ApolloServer({
-    typeDefs: [Query, Author, Book],
-    mocks: true
+  typeDefs: [Query, Author, Book],
+  mocks: true
 })
 
-server.listen().then(() => console.log("stuff"))
+server.listen().then(() => console.log(`Server Running on Port 4000`))

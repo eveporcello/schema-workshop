@@ -5,5 +5,9 @@ const Author = `
     lastName: String
     books: [Book]
   }
+
+  extend type Query {
+    author(name: String): Author
+  }
 `
 module.exports = Author
