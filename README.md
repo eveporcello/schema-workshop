@@ -40,6 +40,7 @@ Schema Enhancements
 
 Evaluation
 -----
+* [Mid-class Evaluation](https://docs.google.com/forms/d/e/1FAIpQLScTFlN6CeIpg-Pe9FLBQOUBjnAWIgSWIGaK1q4tLQI0g3R9Ug/viewform?usp=sf_link)
 * [Course Evaluation](https://docs.google.com/forms/d/e/1FAIpQLSdYOD68TAVsJsNqELJBo8dOV03fjdmC9N9-xXDSC1E1uFZMag/viewform?usp=sf_link)
 
 GraphQL Links
