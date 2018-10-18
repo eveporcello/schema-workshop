@@ -8,7 +8,7 @@ Additional GraphQL topics and resources
 
 Modular Schemas
 ---
-* [Modularizing Your Schema]
+* [Modularizing Your Schema](https://github.com/eveporcello/schema-workshop/tree/master/06-extras/modularizing-a-schema)
 * [Modular Schema Example](https://github.com/swcarlosrj/arcsecond-graphql-api)
 
 Articles
