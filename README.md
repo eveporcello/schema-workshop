@@ -34,7 +34,6 @@ Schema Enhancements
 * [Interfaces Lab](https://github.com/eveporcello/schema-workshop/blob/master/04-schema-enhancements/interfaces/interfaces-start.js)
 * [MutationResponse Interfaces](https://glitch.com/edit/#!/graphql-interfaces)
 * [Deprecated Directive](https://codesandbox.io/s/kwxm244wno)
-* [UpperCase Directive](https://codesandbox.io/s/l78ojm8nw9)
 * [Custom Scalars - Pets](https://codesandbox.io/s/pw32jkj04j)
 * [Custom Scalars - Crypto](https://codesandbox.io/s/53o3pmy43n)
 
